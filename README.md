@@ -21,9 +21,10 @@ Cada laboratorio tendrá sus propias instrucciones para levantar el entorno.
 
 Vulnerabilidades implementadas:
 - IDOR
+- User Enumeration
 
 Próximamente:
-- User Enumeration
+- Broken access control - escalamiento horizontal
 
 ## Contribución
 
