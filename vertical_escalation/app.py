@@ -12,6 +12,12 @@ users = {
     'bob': {'role': 'admin'}
 }
 
+# Nuevo endpoint para ver los roles de los usuarios
+@app.route('/users-roles', methods=['GET'])
+def users_roles():
+    return jsonify({user: info['role'] for user, info in users.items()})
+
+
 @app.route('/resource-insecure', methods=['POST'])
 def resource_insecure():
     data = request.get_json()
